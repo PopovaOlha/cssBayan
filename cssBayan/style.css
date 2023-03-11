@@ -161,3 +161,51 @@
     margin: 0 auto;
     width: 310px;  
 }
+/*-------------------------------*/
+/*Adaptive for tablet*/
+/*-------------------------------*/
+@media (max-width:991.98px) {
+    .wrapper {
+        height: 1180px;
+    }
+    .action_body {
+        padding: 5em 2em;
+    }
+    .name_title {
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    .title_content {
+        font-size: 1.5em;
+    }
+    .accordion_title {
+        padding: 10px 0 40px 0;
+    }
+    .accordion_image {
+        width: 8cm;
+    }
+    .first_img {
+        width: 4.1cm;
+    }
+    .second_img {
+        width: 5cm;
+    }
+    .third_img {
+        width:4.1cm ;
+    }
+    .fourth_img {
+        width: 7cm;
+    }
+    .fifth_img {
+        width: 7cm;
+    }
+    .content-paragraph {
+        font-size: 1.8em;
+    }
+    .accordion_item:hover .accordion_image {
+        margin-bottom: 40px;
+    }
+    .accordion_item:last-child  {
+        padding-bottom: 6em;
+    }
+}
