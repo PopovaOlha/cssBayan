@@ -269,5 +269,6 @@
     }
     .accordion_item:last-child  {
         padding-bottom: 3em;
+        
     }
 }
