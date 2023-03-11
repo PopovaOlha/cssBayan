@@ -209,3 +209,65 @@
         padding-bottom: 6em;
     }
 }
+/*----------------------------------------*/
+/*Adaptive for mobile*/
+/*----------------------------------------*/
+@media (max-width: 767.98px){
+    .wrapper {
+        height: 568px;
+    }
+    .accordion_body {
+        padding: 0 2em;
+        padding-top: 2em;
+    }
+    .name_title {
+        font-size: 3.4em;
+        padding-bottom: 0.6em;
+    }
+    .accordion_title {
+        padding-bottom: 1em;
+    }
+    .title_content {
+        font-size: 1em;
+    }
+    .accordion_arrow {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    .accordion_arrow:hover {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    .accordion_item:hover .accordion_arrow {
+        display: none;
+    }
+    .accordion_image {
+        width: 4cm;
+    }
+    .first_img {
+        width: 2.1cm;
+    }
+    .second_img {
+        width: 2.5cm;
+    }
+    .third_img {
+        width:2.1cm ;
+    }
+    .fourth_img {
+        width: 3.4cm;
+    }
+    .fifth_img {
+        width: 3.5cm;
+    }
+    .content-paragraph {
+        font-size: 12px;
+    }
+    .accordion_item:hover .accordion_image {
+        margin-bottom: 20px;
+    }
+    .accordion_item:last-child  {
+        padding-bottom: 3em;
+    }
+}
