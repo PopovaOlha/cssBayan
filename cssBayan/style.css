@@ -62,7 +62,7 @@
 }
 
 .accordion_item:hover .accordion_arrow {
-    background: url(accordion/keyboard-right.png) no-repeat;
+    background: url(../pictures/angle-arrow.png) no-repeat;
     margin-left: 50px;
     background-size: 20%;
     display: block;
@@ -74,7 +74,7 @@
 }
 
 .accordion_input:checked +.accordion_arrow {
-    background: url(accordion/keyboard-right.png) no-repeat;  
+    background: url(../pictures/keyboard-right.png) no-repeat;  
 }
 
 .accordion_input {
