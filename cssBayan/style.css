@@ -1,0 +1,281 @@
+/*--------------------------------*/
+/*--------------------------------*/
+@import url(reset.css);
+/*--------------------------------*/
+/*--------------------------------*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    max-width: 1960px;
+    height: 1080px;
+}
+
+.accordion_body {
+    background-color: rgb(237, 247, 247);
+    border:1px solid rgb(219, 209, 209);
+    padding: 4em 8em;
+}
+
+.name_title {
+    font-family: 'Poppins';
+    font-size: 4em;
+    font-weight: 900;
+    border-bottom: 1px solid rgb(223, 213, 213);
+    padding-bottom: 1em;
+}
+
+.title_content {
+    font-family: 'Poppins'; 
+    font-size: 2em;
+    font-weight: 700;
+}
+
+ .accordion_item {
+    border-bottom: 1px solid rgb(223, 213, 213);
+ }
+
+.accordion_item:last-child  {
+    border-bottom: none;
+    padding-bottom: 7.5em;
+}
+
+.accordion_content {
+    padding-bottom: 1.2em;
+}
+
+.content-paragraph {
+    text-align: center;
+    font-family: 'Rampart One';
+    color: #ffffff;
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+.accordion_title {
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    padding: 30px 0;
+}
+
+.accordion_item:hover .accordion_arrow {
+    background: url(../pictures/angle-arrow.png) no-repeat;
+    margin-left: 50px;
+    background-size: 20%;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    width: 90px;
+    height: 30px;
+}
+
+.accordion_input:checked +.accordion_arrow {
+    background: url(../pictures/keyboard-right.png) no-repeat;  
+}
+
+.accordion_input {
+    width: 0;
+    height: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;  
+}
+
+.accordion_input:checked + .accordion_image {
+    transition: transform 0.5s;
+    transition-timing-function: ease-in;
+    max-height: 100%;
+}
+
+.container:not(:hover) .accordion_arrow {
+    display: none;
+}
+.container:not(:hover) .accordion_input:checked  {
+    color:black;
+}
+.container:not(:hover) h2 {
+    color: rgb(50, 50, 158);
+}
+
+.accordion_input:hover + .accordion_image {
+  max-height: 100%;
+  transition: all ease-in-out 1s ;
+}
+
+.accordion_arrow {
+    background: url(../pictures/keyboard-right.png) no-repeat;
+    margin-left: 50px;
+    background-size: 20%;
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    width: 90px;
+    height: 30px;
+}
+
+.accordion_image  {
+    overflow: hidden;
+    max-height: 0px;
+    margin: 0 auto;
+    width: 400px;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 0 15px; 
+}
+
+.accordion_item + .accordion_image{ 
+    transition: height 5s;
+    transition-timing-function: linear;
+}
+
+ .accordion_item:hover .accordion_image {
+    margin-bottom: 80px;
+    max-height: 100%;
+    transform: scale(1.2);
+ }
+
+.first_img {
+    display: block;
+    margin: 0 auto;
+    width: 195px;
+}
+
+.second_img {
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+}
+
+.third_img {
+    display: block;
+    margin: 0 auto;
+    width: 190px; 
+}
+
+.fourth_img {
+    display: block;
+    margin: 0 auto;
+    width: 290px;  
+}
+
+.fifth_img {
+    display: block;
+    margin: 0 auto;
+    width: 310px;  
+}
+/*-------------------------------*/
+/*Adaptive for tablet*/
+/*-------------------------------*/
+@media (max-width:991.98px) {
+    .wrapper {
+        height: 1180px;
+    }
+    .action_body {
+        padding: 5em 2em;
+    }
+    .name_title {
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    .title_content {
+        font-size: 1.5em;
+    }
+    .accordion_title {
+        padding: 10px 0 40px 0;
+    }
+    .accordion_image {
+        width: 8cm;
+    }
+    .first_img {
+        width: 4.1cm;
+    }
+    .second_img {
+        width: 5cm;
+    }
+    .third_img {
+        width:4.1cm ;
+    }
+    .fourth_img {
+        width: 7cm;
+    }
+    .fifth_img {
+        width: 7cm;
+    }
+    .content-paragraph {
+        font-size: 1.8em;
+    }
+    .accordion_item:hover .accordion_image {
+        margin-bottom: 40px;
+    }
+    .accordion_item:last-child  {
+        padding-bottom: 6em;
+    }
+}
+/*----------------------------------------*/
+/*Adaptive for mobile*/
+/*----------------------------------------*/
+@media (max-width: 767.98px){
+    .wrapper {
+        height: 568px;
+    }
+    .accordion_body {
+        padding: 0 2em;
+        padding-top: 2em;
+    }
+    .name_title {
+        font-size: 3.4em;
+        padding-bottom: 0.6em;
+    }
+    .accordion_title {
+        padding-bottom: 1em;
+    }
+    .title_content {
+        font-size: 1em;
+    }
+    .accordion_arrow {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    .accordion_arrow:hover {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    .accordion_item:hover .accordion_arrow {
+        display: none;
+    }
+    .accordion_image {
+        width: 3.5cm;
+    }
+    .first_img {
+        width: 1.6cm;
+    }
+    .second_img {
+        width: 2cm;
+    }
+    .third_img {
+        width:1.6cm ;
+    }
+    .fourth_img {
+        width: 2.9cm;
+    }
+    .fifth_img {
+        width: 3cm;
+    }
+    .content-paragraph {
+        font-size: 10px;
+    }
+    .accordion_item:hover .accordion_image {
+        margin-bottom: 20px;
+    }
+    .accordion_item:last-child  {
+        padding-bottom: 3em;
+        
+    }
+}
