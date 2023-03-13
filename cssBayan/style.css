@@ -28,12 +28,12 @@
 .title_content {
     font-family: 'Poppins'; 
     font-size: 2em;
-    font-weight: 700;  
+    font-weight: 700;
 }
 
-.accordion_item {
+ .accordion_item {
     border-bottom: 1px solid rgb(223, 213, 213);
-} 
+ }
 
 .accordion_item:last-child  {
     border-bottom: none;
@@ -82,10 +82,12 @@
     height: 0;
     appearance: none;
     -webkit-appearance: none;
-    position: absolute; 
+    position: absolute;  
 }
 
 .accordion_input:checked + .accordion_image {
+    transition: transform 0.5s;
+    transition-timing-function: ease-in;
     max-height: 100%;
 }
 
@@ -124,6 +126,11 @@
     background-color: grey;
     border-radius: 5px;
     padding: 0 15px; 
+}
+
+.accordion_item + .accordion_image{ 
+    transition: height 5s;
+    transition-timing-function: linear;
 }
 
  .accordion_item:hover .accordion_image {
@@ -244,25 +251,25 @@
         display: none;
     }
     .accordion_image {
-        width: 4cm;
-    }
-    .first_img {
-        width: 2.1cm;
-    }
-    .second_img {
-        width: 2.5cm;
-    }
-    .third_img {
-        width:2.1cm ;
-    }
-    .fourth_img {
-        width: 3.4cm;
-    }
-    .fifth_img {
         width: 3.5cm;
     }
+    .first_img {
+        width: 1.6cm;
+    }
+    .second_img {
+        width: 2cm;
+    }
+    .third_img {
+        width:1.6cm ;
+    }
+    .fourth_img {
+        width: 2.9cm;
+    }
+    .fifth_img {
+        width: 3cm;
+    }
     .content-paragraph {
-        font-size: 12px;
+        font-size: 10px;
     }
     .accordion_item:hover .accordion_image {
         margin-bottom: 20px;
